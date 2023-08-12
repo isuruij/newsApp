@@ -4,7 +4,7 @@ function NewsCard({NewsTitle,NewsDiscription,urlToImage,url}) {
   return (
     <div>
       <div className="card m-5">
-        <img src={urlToImage} className="card-img-top" alt={NewsTitle} />
+        {urlToImage && <img src={urlToImage} className="card-img-top" alt={NewsTitle} />}
         <div className="card-body">
           <h5 className="card-title">{NewsTitle}</h5>
           <p className="card-text">

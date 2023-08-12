@@ -4,6 +4,7 @@ import NewsCard from "./components/NewsCard";
 import { useEffect } from "react";
 import { useState } from "react";
 import { getNews } from "../util/api";
+import Searchbar from "./components/Searchbar";
 
 function App() {
   const [newsList, setnewsList] = useState([]);
@@ -15,7 +16,7 @@ function App() {
       const res = await getNews();
 
       if (res.error) {
-        seterror(res.error);
+        seterror(res.data);
       } else {
         setnewsList(res.data);
       }
@@ -27,6 +28,7 @@ function App() {
     <div>
       <Navbar></Navbar>
       
+      <Searchbar></Searchbar>
 
       {error && <div className="alert alert-danger">{error}</div>}
 

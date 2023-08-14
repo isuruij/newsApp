@@ -32,7 +32,7 @@ function App() {
   }, [keyword]);
 
   return (
-    <div>
+    <div class="back">
       <Navbar></Navbar>
       {isLoading && <Loader ></Loader>}
       <div className="m-4">

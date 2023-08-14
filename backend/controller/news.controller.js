@@ -6,7 +6,7 @@ const getNews = async (req, res) => {
         try {
             const keyword = req.params.keyword
             console.log(keyword)
-            const axiosRes = await axios.get(`https://newsapi.org/v2/everything?q=${keyword}&from=2023-07-13&sortBy=publishedAt&apiKey=${API_KEY}`)
+            const axiosRes = await axios.get(`https://newsapi.org/v2/everything?q=${keyword}&from=2023-07-14&sortBy=publishedAt&apiKey=${API_KEY}`)
     
             res.status(200).json(axiosRes.data)
         } catch (error) {

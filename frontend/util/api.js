@@ -9,6 +9,7 @@ async function getNews(searchText) {
     
 
     if (res.data.status === "ok") {
+      // here we are reuturning a json file with keys called error and data
       return { error: false, data: res.data.articles };
     } else {
       return { error: true, data: "Unknown Error" };

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getNews } from "../../util/api";
 
 
 function Navbar() {
+
+
   return (
     <div style={{position:"fixed",width:"100%",top:"0",zIndex:"10"}}>
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
@@ -26,22 +29,22 @@ function Navbar() {
                 <a className="nav-link active" aria-current="page" href="#" onClick={()=>{
                   console.log("clicked")
                 }}>
-                  Home
+                  Technology
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Features
+                  Health
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Pricing
+                  Music
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " aria-disabled="true">
-                  Disabled
+                <a className="nav-link " href="#">
+                  Games
                 </a>
               </li>
             </ul>

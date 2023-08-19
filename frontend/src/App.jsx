@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { getNews } from "../util/api";
 import Loader from "./components/Loader";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
+
 
 
 function App() {
@@ -33,13 +36,16 @@ function App() {
 
   return (
     <div class="back">
-      <Navbar></Navbar>
+      <Navbar ></Navbar>
       {isLoading && <Loader ></Loader>}
-      <div className="m-4">
+      <br>
+      </br>
+      <br></br>
+      <div className="m-4" style={{display:"flex",flexDirection:"row"}}>
         <label for="validationTooltip01" className="form-label">
           Search News
         </label>
-        <input
+        <input style={{width:"70%"}}
           type="text"
           className="form-control"
           placeholder="Search..."
@@ -48,7 +54,7 @@ function App() {
 
           }}
         ></input>
-        <button className="btn btn-primary mt-2" onClick={() => { setkeyword(searchText) }}>Search</button>
+        <button style={{display:"flex", marginLeft:"1%"}} className="btn btn-primary" onClick={() => { setkeyword(searchText) }}>Search</button>
       </div>
 
       {error && <div className="alert alert-danger">{error}</div>}

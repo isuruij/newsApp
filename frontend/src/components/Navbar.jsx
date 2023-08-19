@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function Navbar() {
   return (
-    <div>
+    <div style={{position:"fixed",width:"100%",top:"0",zIndex:"10"}}>
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -11,9 +12,9 @@ function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
+            data-bs-toggle="collapse" 
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            aria-controls="navbarNav"  
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -22,8 +23,10 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Homee 
+                <a className="nav-link active" aria-current="page" href="#" onClick={()=>{
+                  console.log("clicked")
+                }}>
+                  Home
                 </a>
               </li>
               <li className="nav-item">
@@ -37,7 +40,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
+                <a className="nav-link " aria-disabled="true">
                   Disabled
                 </a>
               </li>

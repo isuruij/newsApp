@@ -1,0 +1,59 @@
+================================================
+REACT goes in modular - we use import statement
+express goes other way - require statement
+================================================
+
+
+ use react with a bundle pack - vite
+	npm create vite@latest
+go to project folder
+	npm i
+	npm run dev
+localhost:5173
+
+get bootstrap
+	npm i bootstrap
+get axios
+	npm i axios
+
+
+npm i sass
+(sass is a compiler. It compiles scss to css)
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap"; ------ To styles/index.scss
+
+// Import styles to App.jsx
+import "./styles/index.scss";
+
+//Add this to App.jsx to work boostrap js functionalities
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
+
+==============================================================
+
+creating server
+
+npm init
+npm i express cors body-parser axios nodemon 
+
+
+api testing - postman/ thunderclient ext for vs code
+
+
+npm i dotenv 
+
+The dotenv package is commonly used in Node.js applications to load environment variables from a .env file into the process.env object. This is helpful for keeping sensitive information, like API keys or database credentials, separate from your codebase and outside version control.
+
+
+cors - is a middleware
+bodyParser - is a middleware
+
+app.use(cors({origin:"*"}))
+app.use(bodyParser.json())
+
+
+Conditional Rendering 
+{error && <div className="alert alert-danger">{error}</div>}
+==============================================================
+

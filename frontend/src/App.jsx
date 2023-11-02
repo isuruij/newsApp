@@ -171,6 +171,39 @@ function App() {
                     Sports
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    onClick={() => {
+                      setkeyword("Blockchain");
+                    }}
+                  >
+                    Blockchain
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    onClick={() => {
+                      setkeyword("fashion");
+                    }}
+                  >
+                    fashion
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    onClick={() => {
+                      setkeyword("Travel");
+                    }}
+                  >
+                    Travel
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

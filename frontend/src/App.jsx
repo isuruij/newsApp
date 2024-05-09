@@ -62,14 +62,14 @@ function App() {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className="nav-link"
                     aria-current="page"
                     href="#"
                     onClick={() => {
-                      setkeyword("Climate Change");
+                      setkeyword("Metaverse");
                     }}
                   >
-                    Climate Change
+                    Metaverse
                   </a>
                 </li>
                 <li className="nav-item">
@@ -77,10 +77,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("New COVID-19 variant");
+                      setkeyword("Crypto");
                     }}
                   >
-                    New COVID-19 variant
+                    Crypto
                   </a>
                 </li>
                 <li className="nav-item">
@@ -88,10 +88,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("Cyberattack");
+                      setkeyword("Ai");
                     }}
                   >
-                    Cyberattack
+                    Ai
                   </a>
                 </li>
                 <li className="nav-item">
@@ -99,10 +99,10 @@ function App() {
                     className="nav-link "
                     href="#"
                     onClick={() => {
-                      setkeyword("UFO sighting");
+                      setkeyword("UFO");
                     }}
                   >
-                    UFO sighting
+                    UFO
                   </a>
                 </li>
                 <li className="nav-item">
@@ -110,10 +110,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("Natural disaster");
+                      setkeyword("Health");
                     }}
                   >
-                    Natural disaster
+                    Health
                   </a>
                 </li>
                 <li className="nav-item">
@@ -121,10 +121,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("Tech innovation");
+                      setkeyword("Travel");
                     }}
                   >
-                    Tech innovation
+                    Travel
                   </a>
                 </li>
                 <li className="nav-item">
@@ -132,10 +132,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("Space Exploration");
+                      setkeyword("Space");
                     }}
                   >
-                    Space Exploration
+                    Space
                   </a>
                 </li>
                 <li className="nav-item">
@@ -154,10 +154,10 @@ function App() {
                     className="nav-link"
                     href="#"
                     onClick={() => {
-                      setkeyword("Artificial Intelligence");
+                      setkeyword("Gaming");
                     }}
                   >
-                    Artificial Intelligence
+                    Gaming
                   </a>
                 </li>
                 <li className="nav-item">
@@ -201,7 +201,18 @@ function App() {
                       setkeyword("Travel");
                     }}
                   >
-                    Travel
+                    Automation
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    onClick={() => {
+                      setkeyword("biotechnology");
+                    }}
+                  >
+                    Biotechnology
                   </a>
                 </li>
               </ul>
@@ -224,7 +235,7 @@ function App() {
             width: "50%",
             position: "fixed",
             marginLeft: "20%",
-            zIndex: "10",
+            zIndex: "3",
           }}
           type="text"
           className="form-control"

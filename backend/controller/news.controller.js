@@ -28,9 +28,7 @@ console.log("Year: " + year);
 const getNews = async (req, res) => {
         try {
             const keyword = req.params.keyword
-            console.log(keyword)
             const axiosRes = await axios.get(`https://newsapi.org/v2/everything?q=${keyword}&from=${year}-${monthWith1BasedIndex-1}-${day}&sortBy=publishedAt&apiKey=${API_KEY}`)
-    
             res.status(200).json(axiosRes.data)
         } catch (error) {
             res.status(400).json({error:"An error occured"})

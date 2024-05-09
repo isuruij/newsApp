@@ -9,7 +9,7 @@ const host = '0.0.0.0';
 
 const app = express();
 
-app.use(cors({origin:"*"}))
+app.use(cors())
 app.use(bodyParser.json())
 
 app.use("/api/v1/", router);

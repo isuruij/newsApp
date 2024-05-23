@@ -6,4 +6,4 @@ const newsRouter = Router();
 newsRouter.get("/get/:keyword", getNews);
 
 
-module.exports = newsRouter;
+module.exports = newsRouter; 

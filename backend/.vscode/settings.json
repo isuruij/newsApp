@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9e6a06fd-b42f-4ce3-9374-be44cb1554ed/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/newappbackend",
+    "appService.deploySubpath": "controller"
+}
